@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <link href="./resources/css/style.css" type='text/css' rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> 
         <title>Light and Dark Mode</title>
     </head>
+
     <body>
-        <div class="site=container">
-            <div class="light-col">
-                <div id="light-title"><h1>Light</h1></div>
-                <div class='light-content'>
-                    <h2 id="light-content-title">Light Mode</h2>
-                    <div class="light-pro">
-                        <ul>
-                            <li>Light mode forces our pupils to close down and adjust to the increased brightness, which improves sharpness.</li>
-                            <li>Light mode interfaces will allow you to focus faster on the text and display elements.</li>
-                            <li>Light mode is better for older adults and visual impaired individuals</li>
-                        </ul>
-                    </div>
-                    <div class="light-con">
-                        <ul>
-                            <li>Light mode was linked to quickens the development of myopia</li>
-                            <li>Greater device's battery comsumption compare to dark mode</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="header-row">
+            <div id="light-title"><h1>Light</h1></div>
+            <div class="mid-title">
+                <script src="./js/script.js" defer></script>
+                <img src="./resources/image/yinyang.png" alt='Yin & Yang Cirle' height="300px" width='auto'/>
+                <br/>
+                <button onclick="toggleTheme('light');">Light Mode</button>
+                <button onclick="toggleTheme('dark');">Dark Mode</button>
             </div>
-            <div class="mid-col">
-                <div class="mid-title">
-                    <img src="./resources/image/yinyang.png" alt='Yin & Yang Cirle'/>
-                    <button onclick="toggleTheme('light');">Light Mode</button>
-                    <button onclick="toggleTheme('dark');">Dark Mode</button>
-                </div>
-                <div class='mid-content'>
-                    <h2 id="vs">VS</h2>
-                    <h3 id="pro">Pro</h3>
-                    <h3 id="con">Con</h3>
-                    <div id='conclusion'>
-                        <h3 id="conclusion-title">Conclusion</h3>
-                        <p>In people with normal vision (or corrected-to-normal vision), visual performance tends to be better with light mode, whereas some people with cataract and related disorders may perform better with dark mode. On the flip side, long-term reading in light mode may be associated with myopia.<br/> Regardless of all the proof, studies, and research that are available, using dark mode over light mode is ultimately a personal choice of each individual. </p>
-                    </div>
-                </div>
+            <div id="dark-title"><h1>Dark</h1></div>
+        </div>
+        
+        <div class="pro-section">
+            <h2 id="pro-light-title">Light Mode</h2>
+            <div id="mid">
+                <h2 id="vs">VS</h2>
+                <h3 id="pro">Pro</h3>
             </div>
-            <div class="dark-col">
-                <div id="dark-title">
-                    <h1>Dark</h1>
+            <h2 id="pro-dark-title">Dark Mode</h2>
+            <div id="light-pro">
+                <ul>
+                    <li>Light mode is better for older adults and visual impaired individuals.</li>
+                    <li>Light mode interfaces will allow you to focus faster on the text and display elements.</li>
+                    <li>Light mode forces our pupils to close down and adjust to the increased brightness, which improves sharpness.</li>
+                </ul>
+            </div>
+            <div id="dark-pro">
+                <ul>
+                    <li>Dark mode is stylish and hip.</li>
+                    <li>Users with cloudy ocular media had better reading rates with dark modes.</li>
+                    <li>Dark mode is particularly useful for highlight a specific type of content.</li>
+                    <li>Dark mode essentially inhibit the development of myopia (nearsightedness) in your eyes.</li>
+                    <li>Dark mode emmits less light than light mode, therefore lessen device battery consumption.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="con-section">
+            <h3 id="con">Con</h3>
+                <div id="light-con">
+                    <ul>
+                        <li>Greater device's battery comsumption compare to dark mode</li>
+                        <li>Light mode was linked to quickens the development of myopia</li>
+                    </ul>
                 </div>
-                <div class='dark-content'>
-                    <h2 id="dark-content-title">Light Mode</h2>
-                    <div class="dark-pro">
-                        <ul>
-                            <li>Dark mode emmits less light than light mode, therefore lessen device battery consumption.</li>
-                            <li>Dark mode is stylish and hip.</li>
-                            <li>Dark mode is particularly useful for highlight a specific type of content.</li>
-                            <li>Dark mode essentially inhibit the development of myopia(nearsightedness) in your eyes</li>
-                            <li>Users with cloudy ocular media had better reading rates with dark modes.</li>
-                        </ul>
-                    </div>
-                    <div class="dark-con">
-                        <ul>
-                            <li><a href="https://www.merriam-webster.com/dictionary/halation" target="_blank">Halations</a> makes white text seemingly wash out and bleed onto the darker background and appear way blurrier than they actually are.</li>
-                            <li>Dark mode interfaces will make it a bit harder to distinguish text and visual interface elements.</li>
-                            <li>Unconfortable long-term reading experience.</li>
-                        </ul>
-                    </div>
+                <div id="dark-con">
+                    <ul>
+                        <li>Unconfortable long-term reading experience.</li>
+                        <li>Dark mode interfaces will make it a bit harder to distinguish text and visual interface elements.</li>
+                        <li><a href="https://www.merriam-webster.com/dictionary/halation" target="_blank">Halations</a> makes white text seemingly wash out and bleed onto the darker background and appear way blurrier than they actually are.</li>
+                    </ul>
                 </div>
-            </div>    
+        </div>
+        
+        <div id='conclusion'>
+            <h3 id="conclusion-title">Conclusion</h3>
+            <p>In people with normal vision (or corrected-to-normal vision), visual performance tends to be better with light mode, whereas some people with cataract and related disorders may perform better with dark mode. On the flip side, long-term reading in light mode may be associated with myopia.<br/> Regardless of all the proof, studies, and research that are available, using dark mode over light mode is ultimately a personal choice of each individual. </p>
         </div>
     </body>
 </html>
